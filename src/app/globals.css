@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+  } */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  
+}
+.side {
+  max-width: 149px;
+  width: 100%;
+  /* position: sticky; */
+  min-height: 100%;
+  top: 0;
+  left: 100px;
+}
+.button {
+  font: 1em Arial, sans-serif;
+  /* display: inline-block; */
+  /* padding: 1em;margin: 1em; */
+  border-radius: 5px;
+  text-decoration: none;
+  color: gray;
+  
+ 
+  background-image: linear-gradient(purple, pink), linear-gradient(silver, silver);
+  background-size: 0 100%, auto;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all .3s ease-out;
+}
+
+.button:hover {
+  color: #fff;
+  background-size: 100% 100%, auto;
+}
