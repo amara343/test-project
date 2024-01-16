@@ -24,7 +24,7 @@ const Sidebar = () => {
   console.log({ pathname });
  
   return (
-    <div className="sm:flex hidden side left-20  flex-col gap-10  py-20 ">
+    <div className="sm:flex hidden side left-20  flex-col gap-10 px-12 py-20 ">
       <div className="flex fixed flex-col gap-4 justify-center items-center">
         <img src="/test.img/Group 812382.png" alt="img" />
         <h1 className="font-bold text-sm">Figma Library</h1>
