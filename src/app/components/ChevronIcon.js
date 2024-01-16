@@ -1,31 +1,32 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import Link from "next/link";
 import React from "react";
 const navigationItems = [
-  {href:"/" , label: "All components" },
-  {href:"/" ,  label: "Templates" },
-  {href:"/" ,  label: "Icons" },
-  {href:"/" ,  label: "Mockups" },
-  {href:"/" ,  label: "Content" },
-  {href:"/" ,  label: "Website" },
-  {href:"/" ,  label: "Webapp" },
-  {href:"/" ,  label: "Social" },
-  {href:"/" ,  label: "Webpage" },
-  {href:"/" ,  label: "Feather" },
-  {href:"/" ,  label: "Ionicons" },
-  {href:"/" ,  label: "Lucide Icons" },
-  {href:"/" ,  label: "Tabler Icons" },
-  {href:"/" ,  label: "Ecommerce" },
-  {href:"/marketing" ,  label: "Marketing" },
-  // {href:"/" ,  label: "About" },
-  // {href:"/" ,  label: "Sign In" },
+  { href: "/components", label: "All components" },
+  { href: "/templates", label: "Templates" },
+  { href: "/icons", label: "Icons" },
+  { href: "/mockups", label: "Mockups" },
+  { href: "/content", label: "Content" },
+ 
 ];
 const ChevronIcon = () => {
+  const navigate = useRouter();
+  const handleChange = (e) => {
+   
+    navigate.push(e.target.value);
+  };
   return (
     <div>
       <nav>
-        <select>
+        <select
+          onChange={(e) => {
+            handleChange(e);
+          }}
+        >
           {navigationItems.map((item) => (
-            <option>{item.label}</option>
+            <option value={item.href}>{item.label}</option>
           ))}
         </select>
       </nav>

@@ -8,62 +8,38 @@ import ChevronIcon from '../components/ChevronIcon';
 import Tabs from '../components/Tabs';
 const Cards = [
   {
-    img: "/test.img/image 16.png",
-    para: "Page 1 ( Homepage )",
-    icon: "/test.img/Frame.png",
-    button: "Copy to clipboard",
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/fetch-graphic-1-1024x728.png",
+   
   },
   {
-    img: "/test.img/image 16.png",
-    para: "Page 2 ( About us )",
-    icon: "/test.img/Frame.png",
-    button: "Copy to clipboard",
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/fetch-graphic-1-1024x728.png",
+   
   },
-  {
-    img: "/test.img/image 16.png",
-    para: "Page 3 ( FAQ )",
-    icon: "/test.img/Frame.png",
-    button: "Copy to clipboard",
-  },
+ 
 ];
 const Cards1 = [
   {
-    img: "/test.img/image 16.png",
-    para: "Page 1 ( Homepage )",
-    icon: "/test.img/Frame.png",
-    button: "Copy to clipboard",
+    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-1024x728.jpg",
+   
   },
   {
-    img: "/test.img/image 16.png",
-    para: "Page 2 ( About us )",
-    icon: "/test.img/Frame.png",
-    button: "Copy to clipboard",
+    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-1024x728.jpeg",
+   
   },
-  {
-    img: "/test.img/image 16.png",
-    para: "Page 3 ( FAQ )",
-    icon: "/test.img/Frame.png",
-    button: "Copy to clipboard",
-  },
+  
 ];
 const Cards2 = [
   {
-    img: "/test.img/image 16.png",
-    para: "Page 1 ( Homepage )",
-    icon: "/test.img/Frame.png",
-    button: "Copy to clipboard",
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/hyphen-Graphic-1-1024x728.png",
+    
   },
   {
-    img: "/test.img/image 16.png",
-    para: "Page 2 ( About us )",
-    icon: "/test.img/Frame.png",
-    button: "Copy to clipboard",
+    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-3-1024x728.jpg",
+   
   },
   {
-    img: "/test.img/image 16.png",
-    para: "Page 3 ( FAQ )",
-    icon: "/test.img/Frame.png",
-    button: "Copy to clipboard",
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/hyphen-Graphic-1-1024x728.png",
+   
   },
 ];
 const Page = () => {
@@ -80,21 +56,21 @@ const Page = () => {
   };
   return (
     <div className="flex justify-center ">
-      <div className="flex flex-col py-16 px-8  gap-8">
-        <div className="md:flex flex-wrap justify-between ">
-          <div className="py-10 px-10  w-full max-w-[757px] flex flex-col justify-center gap-4">
-            <h1 className="font-bold text-2xl">
+    <div className="md:flex flex-col px-8  gap-8 w-full">
+      <div className="md:flex justify-between items-center w-full">
+        <div className="py-20 px-10 flex flex-col gap-4 w-full justify-start">
+          <h1 className="font-bold text-2xl">
             Get a headstart with modern template designs
             </h1>
             <p>
             The template section has got you covered to launch your next big thing. You can experiment with pages in each template
             </p>
           </div>
-          <div>
+          <div className="flex justify-end w-full right-0">
             <img src="/test.img/Group 1000003717.png" alt="img" />
           </div>
         </div>
-        <div className="flex justify-between items-center shadow-lg px-4 py-4 relative">
+        <div className="flex justify-between items-center shadow-lg px-4 py-10 relative">
           <input  onChange={handleSearch}
             class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-gray-500 focus:ring-gray-500 focus:ring-1 sm:text-sm"
             placeholder="Search..."
@@ -105,7 +81,7 @@ const Page = () => {
          
         </div>
        
-        <div className="flex justify-between items-center shadow-lg px-4 py-4">
+        <div className="md:flex  justify-between items-center shadow-lg px-4 py-4 gap-20">
 
         <Tabs
              tab={tab}
@@ -114,12 +90,15 @@ const Page = () => {
                setTab(tab);
              }}
             tabs={[
-              { title: " Website Templates" },
-              { title: "Webapp Templates" },
-              { title: "Social Media Templates" },
+              { title: "Admin Templates" },
+              { title: "Ecommerce Templates" },
+              { title: "Marketing Templates" },
             ]}
           />
+          <div className="flex justify-end ">
+
         <ChevronIcon />
+          </div>
         
         </div>
         

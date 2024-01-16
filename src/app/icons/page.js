@@ -8,93 +8,93 @@ import TablerIcons from "../components/TablerIcons";
 import ChevronIcon from "../components/ChevronIcon";
 import Tabs from "../components/Tabs";
 const Cards = [
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/02_wp_up_14.png" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
 ];
 
 const Cards1 = [
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/02_wp_up_14.png" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
 ];
 const Cards2 = [
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/02_wp_up_14.png" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
 ];
 const Cards3 = [
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/02_wp_up_14.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/03_mk_up_72.png" },
-  { image: "/test.img/CTA 02.png" },
-  { image: "/test.img/02_wp_up_13.png" },
-  { image: "/test.img/02_wp_up_14.png" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/musical-notes-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/play-skip-forward-circle.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/medkit.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag-outline.svg" },
+  { image: "https://figma-library.s3.us-west-1.amazonaws.com/ionicons/pricetag.svg" },
 ];
 
 const Page = () => {
@@ -111,10 +111,10 @@ const Page = () => {
   };
   return (
     <div className="flex justify-center ">
-      <div className="flex flex-col py-16 px-8  gap-8">
-        <div className="flex flex-row justify-between ">
-          <div className="py-10 px-10  w-full max-w-[757px] gap-4 flex flex-col justify-center">
-            <h1 className="font-bold text-2xl">
+    <div className="md:flex flex-col px-8  gap-8 w-full">
+      <div className="md:flex justify-between items-center w-full">
+        <div className="py-20 px-10 flex flex-col gap-4 w-full justify-start">
+          <h1 className="font-bold text-2xl">
               Open source icon libraries simplified
             </h1>
             <p>
@@ -123,7 +123,7 @@ const Page = () => {
               icon & copy/paste in figma.
             </p>
           </div>
-          <div>
+          <div className="flex justify-end w-full right-0">
             <img src="https://figmalibrary.com/wp-content/themes/figmalib/images/icons-page.svg" alt="img" />
           </div>
         </div>
@@ -137,7 +137,8 @@ const Page = () => {
           <img src="/test.img/Vector.png" className="absolute right-7" alt="img"/>
          
         </div>
-        <div className="flex justify-between items-center shadow-lg px-4 py-4">
+        <div className="md:flex justify-between items-center shadow-lg px-4 py-4 gap-20 ">
+         <>
           <Tabs
             tab={tab}
             setTab={(tab) => {
@@ -150,8 +151,9 @@ const Page = () => {
               { title: "LucideIcons" },
               { title: "TablerIcons" },
             ]}
-          />
-          <div className="flex">
+            />
+            </> 
+          <div className="flex  justify-end ">
             <ChevronIcon />
           </div>
         </div>

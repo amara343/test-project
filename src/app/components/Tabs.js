@@ -2,7 +2,7 @@ import React from "react";
 
 const Tabs = ({ tab, setTab, tabs = [] }) => {
   return (
-    <div className="flex gap-10">
+    <div className="flex flex-wrap">
       {tabs.map((it, i) => (
         <div
           key={i}

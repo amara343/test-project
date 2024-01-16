@@ -37,9 +37,9 @@ const Page = () => {
   };
   return (
     <div className="flex justify-center ">
-      <div className="flex flex-col py-16 px-8  gap-8">
-        <div className="flex flex-row justify-between ">
-          <div className="py-10 px-10  w-full max-w-[757px] flex flex-col justify-center gap-4">
+      <div className="md:flex flex-col py-16 px-8 w-full  gap-8">
+        <div className="md:flex flex-row justify-between ">
+          <div className="py-10 px-10  w-full flex flex-col justify-center gap-4">
             <h1 className="font-bold text-2xl">
             Never get out of copy ideas
             </h1>
@@ -47,7 +47,7 @@ const Page = () => {
             Need an idea for headline text or a call to action? We’ve written copy to suit all sorts of industry design needs.
             </p>
           </div>
-          <div>
+          <div className="flex justify-end w-full right-0">
             <img src="https://figmalibrary.com/wp-content/themes/figmalib/images/content-page.svg" alt="img" />
           </div>
         </div>
@@ -61,7 +61,7 @@ const Page = () => {
           <img src="/test.img/Vector.png" className="absolute right-7" alt="img"/>
          
         </div>
-        <div className="grid lg:grid-cols-3   gap-10 ">
+        <div className="grid lg:grid-cols-3 md:grid-cols-1  gap-10 ">
         {filtered.map((it) => (
             <p className="button  max-w-[331px] w-full shadow hover:bg-blue-200 py-4 px-4 rounded-lg">{it.heading}</p>
             ))}

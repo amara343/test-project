@@ -25,14 +25,14 @@
     )
     rgb(var(--background-start-rgb));
   } */
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
   height: 100vh;
   top: 0;
   left: 0;
   
-}
+} */
 .side {
   max-width: 149px;
   width: 100%;
@@ -50,7 +50,7 @@
   color: gray;
   
  
-  background-image: linear-gradient(purple, pink), linear-gradient(silver, silver);
+  background-image: linear-gradient(purple, pink), linear-gradient(white, white);
   background-size: 0 100%, auto;
   background-repeat: no-repeat;
   background-position: center center;

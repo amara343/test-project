@@ -71,9 +71,9 @@ const Page = () => {
   };
   return (
     <div className="flex justify-center ">
-      <div className="flex flex-col py-16 px-8  gap-8">
-        <div className="flex flex-row justify-between ">
-          <div className="py-10 px-10  w-full max-w-[757px] flex flex-col gap-4 justify-center">
+      <div className="md:flex flex-col  px-8 w-full gap-8">
+        <div className="md:flex flex-row justify-between w-full">
+          <div className="py-10 px-10  w-full flex flex-col gap-4 justify-center">
             <h1 className="font-bold text-2xl">
             Present your creations like a boss
             </h1>
@@ -81,7 +81,7 @@ const Page = () => {
             Organize Figma files with cover designs, present on Dribbble like a pro, impress your viewer with mockup on Behnace
             </p>
           </div>
-          <div>
+          <div className="flex justify-end w-full right-0">
             <img src="https://figmalibrary.com/wp-content/themes/figmalib/images/mockups-page.svg" alt="img" />
           </div>
         </div>
@@ -95,7 +95,7 @@ const Page = () => {
           <img src="/test.img/Vector.png" className="absolute right-7" alt="img"/>
          
         </div>
-        <div className="flex justify-between items-center shadow-lg px-4 py-4">
+        <div className="md:flex justify-between items-center shadow-lg px-4 py-4">
           <Tabs
             tab={tab}
             setTab={(tab) => {
@@ -108,7 +108,10 @@ const Page = () => {
               { title: "Portfolio" },
             ]}
           />
-           <ChevronIcon />
+           <div className="flex justify-end ">
+
+<ChevronIcon />
+  </div>
         </div>
         {tab === 1 ? (<Devices  Cards={filtered}/>) : tab === 2 ?( <Hero  Cards={filtered}/>) : (<Portfolio  Cards={filtered} />)}
       </div>

@@ -53,9 +53,9 @@ const Page = () => {
   };
   return (
     <div className="flex justify-center ">
-      <div className="flex flex-col py-16 px-8  gap-8">
-        <div className="md:flex flex-wrap relative justify-between items-stretch py-20 ">
-          <div className="py-10 px-10 flex flex-col gap-4 w-full max-w-[757px] justify-center">
+       <div className="flex flex-col px-8  gap-8 w-full">
+        <div className="md:flex w-full ">
+          <div className="py-10 px-20 gap-4 w-full flex flex-col">
             <h1 className="font-bold text-2xl">
               Ever growing library of copy/paste figma components
             </h1>
@@ -65,7 +65,7 @@ const Page = () => {
               it’s free
             </p>
           </div>
-          <div className="absolute right-0">
+          <div className="flex w-full justify-end right-0">
             <img src="/test.img/Group 6609 1.png" alt="img" />
           </div>
         </div>
@@ -83,7 +83,7 @@ const Page = () => {
             alt="img"
           />
         </div>
-        <div className="flex justify-between items-center shadow-lg px-4 py-4">
+        <div className="md:flex  justify-between items-center shadow-lg px-4 py-4 gap-20">
           <Tabs
             tab={tab}
             setTab={(tab) => {
@@ -96,9 +96,9 @@ const Page = () => {
               { title: "Ecommerce" },
             ]}
           />
-          <>
+          <div className="flex justify-end ">
             <ChevronIcon />
-          </>
+          </div>
         </div>
         {tab === 1 ? (
           <WebPage Cards={filtered} />
