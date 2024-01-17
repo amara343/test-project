@@ -18,12 +18,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className={`flex h-[100hv] justify-center`}>
+        <div className={`flex h-[100hv] `}>
           <Sidebar />
           
-          <div className="md:flex flex-col w-full w:calc(100%-149px) overflow-y ">
-             <div className="flex px-20 pt-20 items-center justify-between">
-               <Link href="/components">Home</Link>
+          <div className="md:flex flex-col w-full w:calc(100%-149px) overflow-y">
+             <div className="">
+             <div className="font-bold flex px-8 pt-8"> <Link href="/components">Home</Link></div> 
           <div className="sm:hidden">
             <VerticalMenu />
              

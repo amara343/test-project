@@ -6,12 +6,12 @@ import React from "react";
 
 const Ionicons = ({Cards}) => {
   return (
-    <div className="md:flex flex-col py-16 px-8  justify-center gap-12">
+    <div className="md:flex flex-col w-full justify-start items-center">
 
-    <div className="grid lg:grid-cols-4 md:grid-cols-3  justify-center gap-8 w-full">
+    <div className="grid lg:grid-cols-5 md:grid-cols-2 gap-4 justify-center w-full">
       {Cards.map((user) => (
-        <div className="button flex flex-wrap justify-center items-center max-w-[100px] w-full  shadow hover:bg-blue-200 py-4 px-4">
-          <img src={user.image} />
+        <div className="button max-w-[1900px] border px-8 py-6">
+          <img src={user.image} className="lg:max-w-[40px]" />
           
         </div>
       ))}

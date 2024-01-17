@@ -11,7 +11,7 @@ const Marketing = ({Cards}) => {
        
           <div className="grid lg:grid-cols-3 ">
             {Cards.map((user) => (
-              <div className="flex justify-center items-center  shadow hover:bg-blue-200 py-4 px-4 rounded-lg">
+              <div className="flex button justify-center items-center  shadow py-4 px-4 rounded-lg">
                 <img src={user.image} />
               </div>
             ))}

@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import React from "react";
 const Sidebar = () => {
   const Icons = [
-    { image: "/test.img/grid.svg", href: "/components", title: "Components" },
+    { image: "https://figmalibrary.com/wp-content/uploads/2022/10/grid-2.svg", href: "/components", title: "Components" },
     {
       image: "/test.img/documents.svg",
       href: "/templates",
@@ -24,16 +24,15 @@ const Sidebar = () => {
   console.log({ pathname });
  
   return (
-    <div className="sm:flex hidden side left-20  flex-col gap-10 px-12 py-20 ">
-      <div className="flex fixed flex-col gap-4 justify-center items-center">
-        <img src="/test.img/Group 812382.png" alt="img" />
-        <h1 className="font-bold text-sm">Figma Library</h1>
-        <p className="font-normal text-xs py-2">DESIGN 10X FASTER</p>
+    <div className="sm:flex hidden side left-20  flex-col gap-12 pl-4 align-center ">
+      <div className="flex fixed flex-col py-4 justify-center items-center ">
+        <img src="https://figmalibrary.com/wp-content/themes/figmalib/images/logo2.svg" alt="img" />
+       
       </div>
     
            
           
-      <div className="flex py-40 fixed flex-col gap-4 dalay-100">
+      <div className="flex pt-32 fixed flex-col gap-2 dalay-100 p-4 h-full px-4">
         {Icons.map((items) => (
           <div className="   ">
             <Link
@@ -45,7 +44,7 @@ const Sidebar = () => {
               }  flex flex-col   hover:rounded-md delay-400  items-center   rounded-lg py-4 px-2 duration-300`}
             >
               <>
-                <img src={items.image} /> {items.title}
+                <img src={items.image} /> <p className="font-normal text-xs">{items.title}</p>
               </>
             </Link>
           </div>

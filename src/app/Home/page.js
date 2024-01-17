@@ -13,7 +13,7 @@ const Home = () => {
     <div className="">
       <div className="flex flex-col px-8  gap-8">
         <div className="md:flex w-full ">
-          <div className="py-10 px-20 gap-4  w-full max-w-[757px] flex flex-col">
+          <div className="py-10 px-32 gap-4  w-full max-w-[757px] flex flex-col">
             <h1 className="font-bold text-2xl">
               Ever growing library of copy/paste figma components
             </h1>

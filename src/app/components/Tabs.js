@@ -8,8 +8,8 @@ const Tabs = ({ tab, setTab, tabs = [] }) => {
           key={i}
           onClick={() => setTab(i + 1)}
           className={`${
-            tab === i + 1 ? "active:border-b-black" : ""
-          } hover:bg-gray-100 p-2 border-b-transparent border-b-4 hover:border-b-black hover:text-black px-4`} >
+            tab === i + 1 ? "border border-b-black text-black font-bold" :  ""
+          }   delay-400  items-center py-4 px-8 duration-300`} >
           <p>{it.title}</p>
         </div>
       ))}

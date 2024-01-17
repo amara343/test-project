@@ -11,7 +11,7 @@ const Ecommerce = ({Cards}) => {
         
           <div className="grid lg:grid-cols-4">
             {Cards.map((user) => (
-              <div className="flex justify-center items-center   shadow hover:bg-blue-200 py-4 px-4">
+              <div className="flex button justify-center items-center   shadow  py-4 px-4">
                 <img src={user.image} />
               </div>
             ))}

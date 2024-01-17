@@ -11,7 +11,7 @@ const WebPage = ({Cards}) => {
 
     <div className="grid lg:grid-cols-4 md:grid-cols-3 w-full">
       {Cards.map((user) => (
-        <div className="button flex flex-wrap justify-center items-center   shadow hover:bg-blue-200 py-4 px-4">
+        <div className="button flex flex-wrap justify-center items-center   shadow  py-4 px-4">
           <img src={user.image} />
           
         </div>

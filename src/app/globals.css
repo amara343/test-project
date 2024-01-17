@@ -40,6 +40,7 @@
   min-height: 100%;
   top: 0;
   left: 100px;
+  
 }
 .button {
   font: 1em Arial, sans-serif;
@@ -50,7 +51,7 @@
   color: gray;
   
  
-  background-image: linear-gradient(purple, pink), linear-gradient(white, white);
+  background-image: linear-gradient(aqua, aqua), linear-gradient(white, white);
   background-size: 0 100%, auto;
   background-repeat: no-repeat;
   background-position: center center;
