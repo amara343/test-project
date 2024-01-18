@@ -1,23 +1,30 @@
-"use client"
+"use client";
 
-import React from 'react'
+import React from "react";
 
-
- 
-const Social = ({Cards}) => {
+const Social = ({ Cards }) => {
   return (
-    <div className="flex flex-col  justify-center">
+    <div className="">
+      <div className="flex flex-wrap gap-2">
+        {Cards.map((user) => (
+          <div className="button relative flex max-w-[392px] 2xl:max-w-[17%] w-full flex-col justify-between border py-6 px-4">
+            {user.heading && (
+              <div className="absolute flex items-center rounded right-[24px] top-[12px] p-2 justify-end bg-[#ecfccb]">
+                <div>
+                  <img src={user.logo} />
+                </div>
 
-    <div className="flex w-full gap-6">
-      {Cards.map((user) => (
-        <div className="button flex justify-center items-center border border-gray-300 py-6 px-6">
-          <img src={user.img} />
-          
-        </div>
-      ))}
-    </div>
+                <p className="text-[#65a30d] text-xs">{user.heading}</p>
+              </div>
+            )}
+            <div className=" ">
+              <img src={user.img} />
+            </div>
+          </div>
+        ))}
       </div>
-  )
-}
+    </div>
+  );
+};
 
-export default Social
+export default Social;

@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import ChevronIcon from "../components/ChevronIcon";
 import Tabs from "../components/Tabs";
 
+
 const Home = () => {
   const [tab, setTab] = useState(1);
   const pathname = usePathname();
@@ -54,6 +55,7 @@ const Home = () => {
             <ChevronIcon />
           </div>
         </div>
+      
       </div>
     </div>
   );

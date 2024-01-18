@@ -5,6 +5,8 @@ import Link from "next/link";
 import Sidebar from "./components/Sidebar";
 import VerticalMenu from "./components/VerticalMenu";
 
+import Head from "./components/Head";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -13,7 +15,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
- 
+  
  
   return (
     <html lang="en">
@@ -23,7 +25,8 @@ export default function RootLayout({ children }) {
           
           <div className="md:flex flex-col w-full w:calc(100%-149px) overflow-y">
              <div className="">
-             <div className="font-bold flex px-8 pt-8"> <Link href="/components">Home</Link></div> 
+            <Head/>
+              
           <div className="sm:hidden">
             <VerticalMenu />
              

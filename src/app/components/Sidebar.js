@@ -24,7 +24,7 @@ const Sidebar = () => {
   console.log({ pathname });
  
   return (
-    <div className="sm:flex hidden side left-20  flex-col gap-12 pl-4 align-center ">
+    <div className="sm:flex hidden z-50 side left-20  flex-col gap-12 pl-4 align-center ">
       <div className="flex fixed flex-col py-4 justify-center items-center ">
         <img src="https://figmalibrary.com/wp-content/themes/figmalib/images/logo2.svg" alt="img" />
        

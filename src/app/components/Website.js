@@ -8,17 +8,26 @@ import Page from '../templates/page';
 const Website = ({Cards}) => {
  
   return ( 
-    <div className="flex flex-col  justify-center">
-
-    <div className="flex w-full gap-6">
+    <div className="">
+    <div className="flex gap-2">
       {Cards.map((user) => (
-        <div className="button flex justify-center items-center border border-gray-300 py-6 px-6">
-          <img src={user.img} />
-          
+        <div className="button relative flex 2xl:max-w-[31%] w-full flex-col justify-between border py-6 px-4">
+          {user.heading && (
+            <div className="absolute flex items-center rounded right-[24px] top-[12px] p-2 justify-end bg-[#ecfccb]">
+              <div>
+                <img src={user.logo} />
+              </div>
+
+              <p className="text-[#65a30d] text-xs">{user.heading}</p>
+            </div>
+          )}
+          <div className="items-center flex justify-center">
+            <img src={user.img} />
+          </div>
         </div>
       ))}
     </div>
-      </div>
+  </div>
   )
 }
 

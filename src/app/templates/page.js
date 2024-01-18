@@ -6,6 +6,7 @@ import Webapp from "../components/Webapp";
 import Social from "../components/Social";
 import ChevronIcon from '../components/ChevronIcon';
 import Tabs from '../components/Tabs';
+
 const Cards = [
   {
     img: "https://figmalibrary.com/wp-content/uploads/2022/11/fetch-graphic-1-1024x728.png",
@@ -19,28 +20,45 @@ const Cards = [
 ];
 const Cards1 = [
   {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-1024x728.jpg",
+    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-1024x728.jpg", logo:"	https://figmalibrary.com/wp-content/uploads/Union.svg", heading:"PRO"
    
   },
   {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-1024x728.jpeg",
+    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-1024x728.jpeg", logo:"	https://figmalibrary.com/wp-content/uploads/Union.svg", heading:"PRO"
    
   },
   
 ];
 const Cards2 = [
   {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/11/hyphen-Graphic-1-1024x728.png",
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/Graphic-final-1-1024x728.png",
+   
+  },
+   {
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/fetch-graphic-1-1024x728.png",
+   
+  },
+  
+  {
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/hyphen-Graphic-1-1024x728.png", logo:"	https://figmalibrary.com/wp-content/uploads/Union.svg", heading:"PRO"
     
   },
   {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-3-1024x728.jpg",
+    img:"https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-2048x1456.jpg",
+  },
+  {
+    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-3-1024x728.jpg",logo:"	https://figmalibrary.com/wp-content/uploads/Union.svg", heading:"PRO"
    
   },
   {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/11/hyphen-Graphic-1-1024x728.png",
+    img:"https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-2048x1456.jpeg",
+  },
+  {
+    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Krew-Marketing-Template-1024x728.jpg",  logo:"	https://figmalibrary.com/wp-content/uploads/Union.svg", heading:"PRO"
    
   },
+ 
+ 
 ];
 const Page = () => {
   const [tab, setTab] = useState(0);
@@ -58,7 +76,7 @@ const Page = () => {
     <div className="flex justify-center ">
     <div className="flex flex-col px-8  gap-8 w-full">
      <div className="md:flex flex-wrap w-full max-w-[1276px] items-center justify-between">
-       <div className="py-20 px-10 gap-4 w-full justify-start flex flex-col">
+       <div className="py-20 px-10 gap-6 w-full justify-start flex flex-col">
          <h1 className="font-extrabold text-2xl leading-5 not-italic">
             Get a headstart with modern template designs
             </h1>
@@ -82,7 +100,7 @@ const Page = () => {
          
         </div>
        
-        <div className="md:flex text-sm text-[#6b7280] justify-between gap-20">
+        <div className="md:flex text-sm text-[#6b7280] justify-between items-center gap-20 shadow-lg">
 
         <Tabs
              tab={tab}
@@ -102,7 +120,15 @@ const Page = () => {
           </div>
         
         </div>
-        
+        {/* <div>
+          {image.map((user)=>{
+            <div>
+              <img src={user.img}/>
+            </div>
+          }
+          )}
+        </div>
+         */}
          {tab === 1 ? (
           <Website Cards={filtered} />
         ) : tab === 2 ? (

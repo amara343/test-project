@@ -6,7 +6,70 @@ import Tabs from "../components/Tabs";
 import Devices from "../components/Devices";
 import Hero from "../components/Hero";
 import Portfolio from "../components/Portfolio";
-
+const Cards = [
+  {
+    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-6-500x375.jpg",
+  },
+  {
+    img:"https://figmalibrary.com/wp-content/uploads/2022/11/desktop-mockup-3-500x375.jpg",
+  },
+  {
+    img:"https://figmalibrary.com/wp-content/uploads/2022/11/desktop-mockup-3-500x375.jpg",
+  },
+  {
+    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-6-500x375.jpg",
+  },
+  {
+    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-6-500x375.jpg",
+  },
+  {
+    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-6-500x375.jpg",
+  },
+  {
+    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-2-500x375.jpg",
+  },
+  {
+    img:"https://figmalibrary.com/wp-content/uploads/2022/11/desktop-mockup-1-500x375.jpg"
+  },
+  {
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-1-1-500x375.jpg",
+     
+  },
+  {
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-10-500x375.jpg",
+     
+  },
+ 
+  {
+    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-2-500x375.jpg",
+  },
+  {
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/desktop-mockup-5-500x281.jpg",
+   
+  }, {
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-12-500x375.jpg",
+   
+  },
+  {
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-10-500x375.jpg",
+     
+  },
+  {
+    img:"https://figmalibrary.com/wp-content/uploads/2022/11/desktop-mockup-1-500x375.jpg"
+  },
+  {
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-1-1-500x375.jpg",
+     
+  },
+  {
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-10-500x375.jpg",
+     
+  },
+ 
+  {
+    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-2-500x375.jpg",
+  },
+];
 const Cards1 = [
   {
     img:"https://figmalibrary.com/wp-content/uploads/2022/11/Hero-Mockup-17-500x435.jpg",
@@ -80,7 +143,7 @@ const Cards1 = [
    
   },
 ];
-const Cards2 = [
+const Cards2= [
   {
     img:"https://figmalibrary.com/wp-content/uploads/2022/11/Portfolio-Mockup-4-500x375.jpg",
   },
@@ -155,70 +218,7 @@ const Cards2 = [
   },
 
 ];
-const Cards = [
-  {
-    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-6-500x375.jpg",
-  },
-  {
-    img:"https://figmalibrary.com/wp-content/uploads/2022/11/desktop-mockup-3-500x375.jpg",
-  },
-  {
-    img:"https://figmalibrary.com/wp-content/uploads/2022/11/desktop-mockup-3-500x375.jpg",
-  },
-  {
-    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-6-500x375.jpg",
-  },
-  {
-    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-6-500x375.jpg",
-  },
-  {
-    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-6-500x375.jpg",
-  },
-  {
-    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-2-500x375.jpg",
-  },
-  {
-    img:"https://figmalibrary.com/wp-content/uploads/2022/11/desktop-mockup-1-500x375.jpg"
-  },
-  {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-1-1-500x375.jpg",
-     
-  },
-  {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-10-500x375.jpg",
-     
-  },
- 
-  {
-    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-2-500x375.jpg",
-  },
-  {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/11/desktop-mockup-5-500x281.jpg",
-   
-  }, {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-12-500x375.jpg",
-   
-  },
-  {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-10-500x375.jpg",
-     
-  },
-  {
-    img:"https://figmalibrary.com/wp-content/uploads/2022/11/desktop-mockup-1-500x375.jpg"
-  },
-  {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-1-1-500x375.jpg",
-     
-  },
-  {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-10-500x375.jpg",
-     
-  },
- 
-  {
-    img:"https://figmalibrary.com/wp-content/uploads/2022/11/mobile-mockup-2-500x375.jpg",
-  },
-];
+
 const Page = () => {
   const [tab, setTab] = useState(0);
   const [filtered, setfiltered] = useState(

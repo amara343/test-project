@@ -2,14 +2,14 @@ import React from "react";
 
 const Tabs = ({ tab, setTab, tabs = [] }) => {
   return (
-    <div className="flex flex-wrap">
+    <div className="flex flex-wrap ">
       {tabs.map((it, i) => (
         <div
           key={i}
           onClick={() => setTab(i + 1)}
           className={`${
-            tab === i + 1 ? "border border-b-black text-black font-bold" :  ""
-          }   delay-400  items-center py-4 px-8 duration-300`} >
+            tab === i + 1 ? "border border-b-black border-transparent text-black font-bold" :  ""
+          }   delay-400  items-center py-4 px-4 duration-300`} >
           <p>{it.title}</p>
         </div>
       ))}
