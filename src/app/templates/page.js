@@ -40,18 +40,18 @@ const Cards2 = [
   },
   
   {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/11/hyphen-Graphic-1-1024x728.png", logo:"	https://figmalibrary.com/wp-content/uploads/Union.svg", heading:"PRO"
+    img: "https://figmalibrary.com/wp-content/uploads/2022/11/hyphen-Graphic-1-1024x728.png", 
     
   },
   {
     img:"https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-2048x1456.jpg",
   },
   {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-3-1024x728.jpg",logo:"	https://figmalibrary.com/wp-content/uploads/Union.svg", heading:"PRO"
+    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-3-1024x728.jpg",
    
   },
   {
-    img:"https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-2048x1456.jpeg",
+    img:"https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-2048x1456.jpeg",logo:"	https://figmalibrary.com/wp-content/uploads/Union.svg", heading:"PRO"
   },
   {
     img: "https://figmalibrary.com/wp-content/uploads/2022/12/Krew-Marketing-Template-1024x728.jpg",  logo:"	https://figmalibrary.com/wp-content/uploads/Union.svg", heading:"PRO"
@@ -74,9 +74,9 @@ const Page = () => {
   };
   return (
     <div className="flex justify-center ">
-    <div className="flex flex-col px-8  gap-8 w-full">
-     <div className="md:flex flex-wrap w-full max-w-[1276px] items-center justify-between">
-       <div className="py-20 px-10 gap-6 w-full justify-start flex flex-col">
+    <div className="flex flex-col px-6  gap-8 w-full">
+     <div className="md:flex flex-wrap max-w-[1427px] items-center gap-x-6  justify-between ">
+       <div className="pt-20 pb-16 px-16 gap-5 justify-start flex flex-wrap">
          <h1 className="font-extrabold text-2xl leading-5 not-italic">
             Get a headstart with modern template designs
             </h1>
@@ -84,23 +84,23 @@ const Page = () => {
             The template section has got you covered to launch your next big thing. You can experiment with pages in each template
             </p>
           </div>
-          <div className="flex w-full justify-end lg:absolute top-[43px] right-16">
+          <div className="flex w-full justify-end lg:absolute top-[70px] right-16">
             <img src="/test.img/Group 1000003717.png" alt="img" />
           </div>
         </div>
         <div className="flex justify-between items-center  rounded-lg relative border border-[#e5e7eb]">
           <input  onChange={handleSearch}
-            class="placeholder: placeholder:text-[#6b7280] block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-gray-500 focus:ring-gray-500 focus:ring-1 sm:text-sm"
+            class="placeholder: placeholder:text-[#6b7280] block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-gray-500 focus:ring-gray-500 focus:ring-1 sm:text-xs font-medium"
             placeholder="Search..."
             type="text"
             name="search"
-            className="py-4 px-4 w-full rounded-lg"
+            className="py-3 px-4 w-full rounded-lg"
           />
           <img src="/test.img/Vector.png" className="absolute right-7" alt="img"/>
          
         </div>
        
-        <div className="md:flex text-sm text-[#6b7280] justify-between items-center gap-20 shadow-lg">
+        <div className="md:flex text-sm text-[#6b7280] justify-between items-center gap-20 ">
 
         <Tabs
              tab={tab}
@@ -114,10 +114,10 @@ const Page = () => {
               { title: "Marketing Templates" },
             ]}
           />
-          <div className="flex justify-end ">
+          {/* <div className="flex justify-end ">
 
         <ChevronIcon />
-          </div>
+          </div> */}
         
         </div>
         {/* <div>

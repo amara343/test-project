@@ -12,7 +12,7 @@ const Hero = ({Cards}) => {
 
     <div className=" grid lg:grid-cols-5 md:grid-cols-1 gap-4 w-full">
       {Cards.map((user) => (
-        <div className="button flex  shadow hover:bg-blue-200 py-4 px-4">
+        <div className="button flex  shadow-lg py-4 px-4">
           <img src={user.img} />
         </div>
       ))}

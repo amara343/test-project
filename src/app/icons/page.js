@@ -2250,10 +2250,10 @@ const Page = () => {
   };
   return (
     <div className="flex justify-center ">
-       <div className="flex flex-col px-8  gap-8 w-full">
-        <div className="md:flex flex-wrap w-full items-center justify-between">
-          <div className="py-20 px-10 gap-4 w-full justify-start flex flex-col">
-            <h1 className="font-extrabold text-2xl leading-5 not-italic">
+    <div className="flex flex-col px-6  gap-8 w-full">
+     <div className="md:flex flex-wrap max-w-[1427px] items-center gap-x-6  justify-between ">
+       <div className="pt-20 pb-16 px-16 gap-5 justify-start flex flex-wrap">
+         <h1 className="font-extrabold text-2xl leading-5 not-italic">
               Open source icon libraries simplified
             </h1>
             <p>
@@ -2262,7 +2262,7 @@ const Page = () => {
               icon & copy/paste in figma.
             </p>
           </div>
-          <div className="flex w-full justify-end lg:absolute top-[70px] right-16">
+          <div className="flex w-full justify-end lg:absolute top-[100px] right-16">
             <img
               src="https://figmalibrary.com/wp-content/themes/figmalib/images/icons-page.svg"
               alt="img"
@@ -2270,19 +2270,15 @@ const Page = () => {
           </div>
         </div>
         <div className="flex justify-between items-center  rounded-lg relative border border-[#e5e7eb]">
-          <input
-            onChange={handleSearch}
-            class="placeholder: placeholder:text-[#6b7280] block text-xs bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-gray-500 focus:ring-gray-500 focus:ring-1 sm:text-sm"
+          <input  onChange={handleSearch}
+            class="placeholder: placeholder:text-[#6b7280] block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-gray-500 focus:ring-gray-500 focus:ring-1 sm:text-xs font-medium"
             placeholder="Search..."
             type="text"
             name="search"
-            className="py-4 px-4 w-full h-full rounded-lg"
+            className="py-3 px-4 w-full rounded-lg"
           />
-          <img
-            src="/test.img/Vector.png"
-            className="absolute right-7"
-            alt="img"
-          />
+          <img src="/test.img/Vector.png" className="absolute right-7" alt="img"/>
+         
         </div>
         <div className="md:flex text-sm text-[#6b7280] font-normal justify-between gap-20">
           <>
@@ -2300,9 +2296,9 @@ const Page = () => {
               ]}
             />
           </>
-          <div className="flex items-center justify-end ">
+          {/* <div className="flex items-center justify-end ">
             <ChevronIcon />
-          </div>
+          </div> */}
         </div>
         {tab === 1 ? (
           <Feather Cards={filtered} />

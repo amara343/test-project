@@ -8,10 +8,10 @@ const Head = () => {
   console.log({ Pathname });
   return (
     <div>
-      <div className="gap-2 font-bold text-sm flex px-8 pt-8">
-        <Link href="/components">Home</Link> 
+      <div className=" font-bold text-[#1f2937] text-sm flex px-10 pt-12">
+        <Link href="/components" className=''>Home</Link> 
         <span className="font-normal text-gray-600">»</span>
-        <span className="font-normal text-gray-600">{Pathname}</span>
+        <span className="f text-[#47556980] text-sm font-semibold">{Pathname}</span>
         
       </div>
     </div>

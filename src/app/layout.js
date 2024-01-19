@@ -7,6 +7,7 @@ import VerticalMenu from "./components/VerticalMenu";
 
 import Head from "./components/Head";
 
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -22,8 +23,8 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <div className={`flex h-[100hv] `}>
           <Sidebar />
-          
-          <div className="md:flex flex-col w-full w:calc(100%-149px) overflow-y">
+           
+          <div className="md:flex flex-col w-full min-height-[100vh]  overflow-y ">
              <div className="">
             <Head/>
               
@@ -37,8 +38,10 @@ export default function RootLayout({ children }) {
             </div>
             {children}
           </div>
+        
         </div>
       </body>
+      
     </html>
   );
 }

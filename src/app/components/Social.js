@@ -5,9 +5,9 @@ import React from "react";
 const Social = ({ Cards }) => {
   return (
     <div className="">
-      <div className="flex flex-wrap gap-2">
+      <div className="flex flex-wrap gap-6">
         {Cards.map((user) => (
-          <div className="button relative flex max-w-[392px] 2xl:max-w-[17%] w-full flex-col justify-between border py-6 px-4">
+          <div className="button relative shadow-lg flex max-w-[392px] 2xl:max-w-[17%] w-full flex-col border py-6 px-6">
             {user.heading && (
               <div className="absolute flex items-center rounded right-[24px] top-[12px] p-2 justify-end bg-[#ecfccb]">
                 <div>
@@ -17,8 +17,8 @@ const Social = ({ Cards }) => {
                 <p className="text-[#65a30d] text-xs">{user.heading}</p>
               </div>
             )}
-            <div className=" ">
-              <img src={user.img} />
+            <div className="items-center flex">
+              <img src={user.img} className=" "/>
             </div>
           </div>
         ))}

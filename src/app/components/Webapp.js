@@ -7,7 +7,7 @@ import Page from '../templates/page';
 const Webapp = ({Cards}) => {
   return (
     <div className="">
-     <div className="flex flex-wrap gap-2">
+     <div className="flex flex-wrap gap-10">
       {Cards.map((user) => (
         <div className="button relative flex 2xl:max-w-[31%] w-full flex-col justify-between border py-6 px-4">
           {user.heading && (
@@ -19,8 +19,8 @@ const Webapp = ({Cards}) => {
               <p className="text-[#65a30d] text-xs">{user.heading}</p>
             </div>
           )}
-          <div className="lg:max-w-[1974px] w-full ">
-            <img src={user.img} />
+          <div className="items-center flex justify-center w-full ">
+            <img src={user.img} className=" w-full"/>
           </div>
         </div>
       ))}

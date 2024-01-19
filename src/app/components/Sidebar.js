@@ -24,20 +24,20 @@ const Sidebar = () => {
   console.log({ pathname });
  
   return (
-    <div className="sm:flex hidden z-50 side left-20  flex-col gap-12 pl-4 align-center ">
-      <div className="flex fixed flex-col py-4 justify-center items-center ">
+    <div className="sm:flex hidden z-50 side left-20 pt-2 flex-col gap-12 pl-4 justify-between align-center ">
+     <div className=" flex justify-start"> <div className="flex fixed flex-col py-4 justify-center items-center ">
         <img src="https://figmalibrary.com/wp-content/themes/figmalib/images/logo2.svg" alt="img" />
        
       </div>
     
            
           
-      <div className="flex pt-32 fixed flex-col gap-2 dalay-100 p-4 h-full px-4">
+      <div className="flex pt-32 fixed flex-col  dalay-100 p-4 h-full px-4">
         {Icons.map((items) => (
-          <div className="   ">
+          <div className="  ">
             <Link
               href={items.href}
-              className={`flex flex-col justify-center w-full ${
+              className={`flex flex-col justify-center gap-3 w-full ${
                 items.href === pathname
                   ? "bg-black text-white rounded-md"
                   : "hover:bg-gray-200"
@@ -51,6 +51,10 @@ const Sidebar = () => {
         ))}
       
       </div>
+      </div>
+      {/* <div className='fixed md:bg-black md:text-white bg-transparent text-white flex'>
+        <button className="flex justify-end">Login</button>
+    </div> */}
       
     </div>
   );

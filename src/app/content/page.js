@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Para = [
   {
     heading:
-      "Connecting engineers, calculations, and teams together Connecting eng",
+      "Connecting engineers, calculations, and teams together",
   },
   { heading: "Digital data analytics for ambitious companies" },
   { heading: "Unleash the world of Metaverse" },
@@ -73,10 +73,10 @@ const Page = () => {
   };
   return (
     <div className="flex justify-center ">
-      <div className="flex flex-col px-8  gap-8 w-full">
-        <div className="md:flex flex-wrap w-full max-w-[1276px] items-center justify-between">
-          <div className="py-20 px-10 gap-4 w-full justify-start flex flex-col">
-            <h1 className="font-extrabold text-2xl leading-5 not-italic">
+    <div className="flex flex-col px-6  gap-8 w-full">
+     <div className="md:flex flex-wrap max-w-[1427px] items-center gap-x-6  justify-between ">
+       <div className="pt-20 pb-16 px-16 gap-5 justify-start flex flex-col">
+         <h1 className="font-extrabold text-2xl leading-5 not-italic">
               Never get out of copy ideas
             </h1>
             <p>
@@ -84,7 +84,7 @@ const Page = () => {
               copy to suit all sorts of industry design needs.
             </p>
           </div>
-          <div className="flex w-full justify-end lg:absolute top-[70px] right-16">
+          <div className="flex w-full justify-end lg:absolute top-[100px] right-16">
             <img
               src="https://figmalibrary.com/wp-content/themes/figmalib/images/content-page.svg"
               alt="img"
@@ -92,27 +92,24 @@ const Page = () => {
           </div>
         </div>
         <div className="flex justify-between items-center  rounded-lg relative border border-[#e5e7eb]">
-          <input
-            onChange={handleSearch}
-            class="placeholder: placeholder:text-[#6b7280] block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-gray-500 focus:ring-gray-500 focus:ring-1 sm:text-sm"
+          <input  onChange={handleSearch}
+            class="placeholder: placeholder:text-[#6b7280] block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-gray-500 focus:ring-gray-500 focus:ring-1 sm:text-xs font-medium"
             placeholder="Search..."
             type="text"
             name="search"
+            className="py-3 px-4 w-full rounded-lg"
           />
-          <img
-            src="/test.img/Vector.png"
-            className="absolute right-7"
-            alt="img"
-          />
+          <img src="/test.img/Vector.png" className="absolute right-7" alt="img"/>
+         
         </div>
-        <div className="grid lg:grid-cols-5   gap-6 ">
+        <div className="grid lg:grid-cols-5  w-full gap-x-[20px] gap-y-[20px] ">
           {filtered.map((it) => (
-            <p
+           <div className="button shadow w-full p-8 text-lg font-extrabold h-full"> <p
               style={{ color: "black" }}
-              className="button  max-w-[331px] w-full shadow  py-4 px-4 font-bold text-black rounded-lg"
+              className=""
             >
               {it.heading}
-            </p>
+            </p></div>
           ))}
         </div>
       </div>

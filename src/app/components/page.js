@@ -365,38 +365,34 @@ const Page = () => {
   };
   return (
     <div className="flex justify-center ">
-       <div className="flex flex-col px-8  gap-8 w-full">
-        <div className="md:flex flex-wrap w-full max-w-[1276px] items-center justify-between">
-          <div className="py-20 px-10 gap-8 w-full justify-start flex flex-col">
+       <div className="flex flex-col px-6  gap-8 w-full">
+        <div className="md:flex flex-wrap max-w-[1427px] items-center gap-x-6  justify-between ">
+          <div className="pt-20 pb-16 px-16 gap-5 justify-start flex flex-wrap">
             <h1 className="font-extrabold text-2xl leading-5 not-italic">
             Ever growing library of copy/paste figma components
             </h1>
-            <p>
+            <p className="lg:flex flex-wrap w-full">
               Welcome to Figit Library! you can literally copy anything and it
               will work. Everything on your fingertips for your next project and
               it’s free
             </p>
           </div>
-          <div className="flex w-full justify-end lg:absolute top-[43px] right-16">
+          <div className="flex w-full justify-end lg:absolute top-[60px] right-[64px]">
             <img src="/test.img/Group 6609 1.png" alt="img" />
           </div>
         </div>
-        <div className="flex justify-between items-center  rounded-lg relative border border-#e5e7eb">
-          <input
-            onChange={handleSearch}
-            class="placeholder: placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-gray-500 focus:ring-gray-500 focus:ring-1 sm:text-sm"
+        <div className="flex justify-between items-center  rounded-lg relative border border-[#e5e7eb]">
+          <input  onChange={handleSearch}
+            class="placeholder: placeholder:text-[#6b7280] block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-gray-500 focus:ring-gray-500 focus:ring-1 sm:text-xs font-medium"
             placeholder="Search..."
             type="text"
             name="search"
-            className="py-4 px-4 w-full rounded-lg"
+            className="py-3 px-4 w-full rounded-lg"
           />
-          <img
-            src="/test.img/Vector.png"
-            className="absolute right-7"
-            alt="img"
-          />
+          <img src="/test.img/Vector.png" className="absolute right-7" alt="img"/>
+         
         </div>
-        <div className="md:flex text-sm text-[#6b7280] justify-between gap-20">
+        <div className="md:flex w-full text-sm text-[#6b7280] justify-between gap-20">
           <Tabs
             tab={tab}
             setTab={(tab) => {
