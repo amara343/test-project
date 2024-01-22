@@ -9,7 +9,7 @@ const Webapp = ({Cards}) => {
     <div className="">
      <div className="flex flex-wrap gap-10">
       {Cards.map((user) => (
-        <div className="button relative flex 2xl:max-w-[31%] w-full flex-col justify-between border py-6 px-4">
+        <div className="button container2 relative flex 2xl:max-w-[31%] w-full flex-col justify-between border py-6 px-4">
           {user.heading && (
             <div className="absolute flex items-center rounded right-[24px] top-[12px] p-2 justify-end bg-[#ecfccb]">
               <div>
@@ -21,6 +21,7 @@ const Webapp = ({Cards}) => {
           )}
           <div className="items-center flex justify-center w-full ">
             <img src={user.img} className=" w-full"/>
+            <button class="btn">Explore</button>
           </div>
         </div>
       ))}

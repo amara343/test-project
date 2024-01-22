@@ -11,7 +11,7 @@ const Website = ({Cards}) => {
     <div className="">
     <div className="flex gap-5">
       {Cards.map((user) => (
-        <div className="button relative flex 2xl:max-w-[31%] w-full flex-col justify-between border py-6 px-4">
+        <div className="button container2 relative flex 2xl:max-w-[31%] w-full flex-col justify-between border py-8 px-6">
           {user.heading && (
             <div className="absolute flex items-center rounded right-[24px] top-[12px] p-2 justify-end bg-[#ecfccb]">
               <div>
@@ -23,6 +23,7 @@ const Website = ({Cards}) => {
           )}
           <div className="items-center flex justify-center">
             <img src={user.img} className='w-full' />
+            <button class="btn">Explore</button>
           </div>
         </div>
       ))}

@@ -11,7 +11,7 @@ const Head = () => {
       <div className=" font-bold text-[#1f2937] text-sm flex px-10 pt-12">
         <Link href="/components" className=''>Home</Link> 
         <span className="font-normal text-gray-600">»</span>
-        <span className="f text-[#47556980] text-sm font-semibold">{Pathname}</span>
+        <span className=" text-[#47556980] text-sm font-semibold">{Pathname} Catagory</span>
         
       </div>
     </div>

@@ -10,9 +10,9 @@ const TablerIcons = ({Cards}) => {
 
     <div className="grid lg:grid-cols-5  gap-3 justify-center w-full">
       {Cards.map((user) => (
-        <div className="button max-w-[1900px] shadow-lg px-8 py-6">
+        <div className="button container1 max-w-[1900px] shadow-lg px-8 py-6">
           <img src={user.image} className="lg:max-w-[40px]" />
-          
+          <button class="btn">Copy to clipboard</button>
         </div>
       ))}
     </div>

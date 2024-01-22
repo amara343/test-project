@@ -32,19 +32,23 @@ const Sidebar = () => {
     
            
           
-      <div className="flex pt-32 fixed flex-col  dalay-100 p-4 h-full px-4">
+      <div className="flex pt-32 fixed flex-col  dalay-100 gap-4 h-full px-4">
         {Icons.map((items) => (
           <div className="  ">
             <Link
               href={items.href}
-              className={`flex flex-col justify-center gap-3 w-full ${
+              className={`flex flex-col justify-center gap-2 w-full ${
                 items.href === pathname
                   ? "bg-black text-white rounded-md"
                   : "hover:bg-gray-200"
-              }  flex flex-col   hover:rounded-md delay-400  items-center   rounded-lg py-4 px-2 duration-300`}
+              }  flex flex-col   hover:rounded-md delay-400  items-center pt-4  rounded-lg py-2 px-2 duration-300`}
             >
               <>
-                <img src={items.image} /> <p className="font-normal text-xs">{items.title}</p>
+                <img src={items.image}  className={`${
+                items.href === pathname
+                  ? "logo-gray-200"
+                  : "logo-black"
+              } `}/> <p className="font-normal text-xs">{items.title}</p>
               </>
             </Link>
           </div>

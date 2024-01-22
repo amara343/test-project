@@ -7,7 +7,7 @@ const Social = ({ Cards }) => {
     <div className="">
       <div className="flex flex-wrap gap-6">
         {Cards.map((user) => (
-          <div className="button relative shadow-lg flex max-w-[392px] 2xl:max-w-[17%] w-full flex-col border py-6 px-6">
+          <div className="button container2 relative shadow-lg flex max-w-[392px] 2xl:max-w-[17%] w-full flex-col border py-8 px-6">
             {user.heading && (
               <div className="absolute flex items-center rounded right-[24px] top-[12px] p-2 justify-end bg-[#ecfccb]">
                 <div>
@@ -19,6 +19,8 @@ const Social = ({ Cards }) => {
             )}
             <div className="items-center flex">
               <img src={user.img} className=" "/>
+              <button class="btn">Explore</button>
+              
             </div>
           </div>
         ))}

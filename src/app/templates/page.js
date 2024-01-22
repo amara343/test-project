@@ -4,7 +4,6 @@ import React, { useState } from 'react';
 import Website from "../components/Website";
 import Webapp from "../components/Webapp";
 import Social from "../components/Social";
-import ChevronIcon from '../components/ChevronIcon';
 import Tabs from '../components/Tabs';
 
 const Cards = [
@@ -20,7 +19,7 @@ const Cards = [
 ];
 const Cards1 = [
   {
-    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-1024x728.jpg", logo:"	https://figmalibrary.com/wp-content/uploads/Union.svg", heading:"PRO"
+    img: "https://figmalibrary.com/wp-content/uploads/2022/12/Graphic-1-1024x728.jpg",
    
   },
   {
@@ -74,10 +73,10 @@ const Page = () => {
   };
   return (
     <div className="flex justify-center ">
-    <div className="flex flex-col px-6  gap-8 w-full">
+    <div className="flex flex-col px-6  gap-8">
      <div className="md:flex flex-wrap max-w-[1427px] items-center gap-x-6  justify-between ">
        <div className="pt-20 pb-16 px-16 gap-5 justify-start flex flex-wrap">
-         <h1 className="font-extrabold text-2xl leading-5 not-italic">
+         <h1 className="font-bold text-2xl leading-5 not-italic">
             Get a headstart with modern template designs
             </h1>
             <p>
