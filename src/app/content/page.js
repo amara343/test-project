@@ -105,11 +105,11 @@ const Page = () => {
             alt="img"
           />
         </div>
-        <div className="grid lg:grid-cols-5  w-full gap-x-[10px] gap-y-[20px] ">
+        <div className="grid xl:grid-cols-5 lg:grid-cols-4 w-full gap-x-[20px] gap-y-[10px] ">
           {filtered.map((it) => (
-            <div className="button text-black container1 shadow max-w-[300px] w-full px-6 py-8 flex justify-center items-center font-bold text-base h-full">
+            <div className="button text-black container1 shadow max-w-[300px] w-full px-6 py-6 flex justify-center items-center  h-full">
              
-              <p style={{ color: "black" }}>{it.heading}</p>
+              <p style={{ color: "black", fontSize:"16px" , fontWeight:"bold"}}>{it.heading}</p>
               <button class="btn">Copy to clipboard</button>
             </div>
           ))}
